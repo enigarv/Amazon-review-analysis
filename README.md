@@ -1,6 +1,7 @@
 # Reviews Analysis
 I perform a Sentiment Analysis, also known as Opinion Mining, on Amazon’s reviews for the purpose to extract subjective information by analyzing text data written by users. The main goal is to identify the user’s subjectivity and classify the statements into two different groups of sentiments. I also perform a clustering analysis on the
 reviews in order to discover similarities. Indeed, understanding purchase patterns has significant impact on similar item suggestions, which is a crucial component to the Amazon experience.
+I download the data from this web site https://drive.google.com/drive/folders/0Bz8a_Dbh9Qhbfll6bVpmNUtUcFdjYmF2SEpmZUZUcVNiMUw1TWN6RDV3a0JHT3kxLVhVR2M?resourcekey=0-TLwzfR2O-D2aPitmn5o9VQ. The code comes with a data loader which automatically unzip the data.
 
 # Preprocessing
 For NLP projects, text preprocessing is traditionally a vital step as it has a potential impact on the final performance of our models. The first step we made
@@ -14,10 +15,9 @@ Some fundamental preprocessing steps i made include:
 - Expansion of contractions (e.g. ’won’t’ corresponds to ’will not’). 
 
 As last I perform lemmatization and stemming to reduce the inflactions.
-
 It follows an example of my preprocessing:
 
--Before: *’Pitch Black plays perfectly, but for some reason Chronicles is still terrible in this set :(.’*
+- Before: *’Pitch Black plays perfectly, but for some reason Chronicles is still terrible in this set :(.’*
 - After with stemming: *’pitch black play perfectli reason chronicl terribl set bad’*.
 
 I will focus on Bag of Words and TF-IDF for words representation.
